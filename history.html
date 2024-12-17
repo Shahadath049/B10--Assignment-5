@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donation Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+
+     <!-- Navbar -->
+     <nav class= " sticky top-0 bg-orange-100 shadow-md flex justify-between lg:justify-evenly items-center  px-6 py-12 z-50 rounded-md ">
+            <div>
+                
+              <a href="./blog.html" class=" text-lg font-extrabold  transition duration-300">
+                <button
+                class="relative px-8 py-3 text-white font-bold text-lg rounded-full shadow-lg transition-all duration-300 
+                       bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 
+                       hover:from-green-500 hover:via-green-600 hover:to-green-200 
+                       transform hover:-translate-y-1 hover:scale-105 focus:ring-4 focus:ring-purple-300"
+              >
+             
+              Blog
+                
+              </button>
+                
+                </a>
+              </div>
+              <div class=" flex flex-col items-center lg:flex-row ">
+                <img class="w-10 mr-2" src="./assets/logo.png" alt="logo"> 
+                <a  href="#" class="flex items-center text-sm lg:text-lg font-semibold  text-gray-700">
+                    
+                  Donate Bangladesh
+                </a>
+              </div>
+              <div>
+                <span class="text-black-500 font-bold text-lg">💰 <span id="my-balance">5500</span> BDT</span>
+              </div>
+        
+      </nav>
+      <section class=" sticky top-36 flex justify-center items-center py-8 bg-orange-100 bg-opacity-75 z-40 ">
+        <div class="flex space-x-4">
+            <a href="./index.html">
+            
+                <button class="bg-gray-200 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-300 transition duration-300">
+              Donation
+                </button></a>
+          <button class="bg-green-400 text-white px-6 py-3 rounded-lg shadow hover:bg-green-500 transition duration-300">
+            History
+          </button>
+        </div>
+      </section>
+
+  <!-- Container -->
+  <div class="container mx-auto px-6">
+
+   
+
+            <div class="bg-white shadow-lg rounded-xl mt-6 overflow-hidden text-center ">
+                <h1 class="font-bold text-4xl my-5 ">Donation History</h1>
+                <div id="history-container" class="-z-10"></div>
+            </div>
+   
+
+    
+  </div>
+        <script src="./js/history.js"></script>
+</body>
+</html>
